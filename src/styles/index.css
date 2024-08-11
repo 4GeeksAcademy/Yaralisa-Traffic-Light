@@ -1,12 +1,46 @@
+ #semaforo{
+    background-color: black;
+    padding: 15px;
+    display: inline-block;
+   
+ }
 
-/* 
+ .contenedor {
+  display: flex;
+  flex-direction: column; /* Asegura que la barra esté debajo del semáforo */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+.barra {
+  width: 20px; /* Ancho de la barra */
+  height: 200px; /* Altura de la barra */
+  background-color: black; /* Color de la barra */
+  margin: 0 auto; /* Centrar la barra horizontalmente */
+}
+.luz {
+    width: 80px;
+    height: 80px;
+    margin: 10px 0;
+    border-radius: 50%;
+    background-color: grey;
+  }
+  .luz img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta la imagen para que cubra todo el `div` */
+  }
+  #rojo.active {
+    background-color: red;
+    box-shadow: 0px 0px 30px 20px #e47a7a;
+  }
+  #amarillo.active {
+    background-color:rgb(255, 255, 0);
+    box-shadow: 0px 0px 30px 20px #c6e985;
+  }
+  #verde.active {
+    background-color: rgb(0, 255, 21);
+    box-shadow: 0px 0px 30px 20px #9be98b;
+  }
