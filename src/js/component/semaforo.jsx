@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const Semaforo = () => {
   const [currentState, setCurrentState] = useState(0); // 0: rojo, 1: amarillo, 2: verde
   const states = ["verde", "amarillo", "rojo"];
-  const durations = [10000, 2000, 15000]; // Duraciones en milisegundos
+  const durations = [2500, 2000, 2500]; // Duraciones en milisegundos
   useEffect(() => {
     const timer = setTimeout(() => {
       setCurrentState((currentState + 1) % states.length);
